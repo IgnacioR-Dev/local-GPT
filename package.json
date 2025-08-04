@@ -1,0 +1,17 @@
+{
+  "name": "chatgpt-local",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "---",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

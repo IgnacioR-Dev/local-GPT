@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Meta para hacer la página responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local GPT</title>
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  <!-- Contenedor principal de la app -->
+  <div id="app-container">
+
+    <!-- Barra lateral con opciones -->
+    <aside id="sidebar">
+      <h1>Local<strong>GPT</strong></h1>
+      <button id="toggle-opciones" aria-expanded="false" aria-controls="opciones-lista" style="cursor:pointer; font-weight: bold; font-size: 1.2em;">
+        Opciones ▼
+      </button>
+
+      <ul id="opciones-lista">
+        <li><button type="button" id="exportar-json">Exportar chat (JSON)</button></li>
+        <li><button type="button" id="importar-json-btn">Importar chat (JSON)</button></li>
+        <li><input type="file" id="importar-json" accept=".json" style="display:none" /></li>
+      </ul>
+      <button id="resetear-chat">Reiniciar conversación</button>
+    </aside>
+
+
+    <!-- Sección principal del chat -->
+    <section id="chat-section">
+      <!-- Contenedor scrollable para lista de mensajes -->
+      <main>
+        <ul id="lista-mensajes">
+          <!-- Aquí se insertan dinámicamente los mensajes -->
+        </ul>
+      </main>
+
+      <!-- Formulario para enviar mensajes -->
+      <form id="formulario-chat">
+        <!-- Input para escribir mensaje -->
+        <input id="input-mensaje" placeholder="Escribe tu mensaje aquí..." autocomplete="off" />
+        <!-- Botón para enviar mensaje, inicialmente deshabilitado -->
+        <button id="boton-enviar" type="submit" disabled>Enviar</button> 
+      </form>
+
+      <!-- Pequeño texto para mostrar estados o mensajes de feedback -->
+      <small id="estado">&nbsp;</small>
+    </section>
+  </div>
+
+  <!-- Plantilla HTML para cada mensaje del chat -->
+  <template id="message-template">
+    <li class="message">
+      <!-- Nombre del emisor (GPT o Tú) -->
+      <span></span>
+      <!-- Contenido del mensaje -->
+      <p></p>
+      <!-- Botón de copiar mensaje, oculto inicialmente -->
+      <button class="copiar-mensaje" title="Copiar" style="display: none;">📋</button>
+    </li>
+  </template>
+
+  <!-- Script principal del chat, cargado como módulo -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
