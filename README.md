@@ -36,7 +36,7 @@ Accede desde: `http://127.0.0.1:8081`
 
 ## 🎨 Características
 
-- Interfaz minimalista y adaptativa.
+- Interfaz minimalista e intuitiva.
 - Streaming de texto en tiempo real.
 - Historial de conversación persistente (exportación/importación en JSON).
 - Botón para copiar respuestas con un clic.
