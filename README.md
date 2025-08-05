@@ -1,6 +1,7 @@
 # 🧠 LocalGPT - Agente LLM en tu Navegador
 
-<img width="1918" height="912" alt="image" src="https://github.com/user-attachments/assets/145ee3a0-7fca-491a-9245-a859003a672e" />
+<img width="1920" height="1440" alt="LocalGPT-image" src="https://github.com/user-attachments/assets/797100c6-ca48-436b-9329-74169be48713" />
+
 
 
 LocalGPT es un agente conversacional que funciona 100% en el navegador, usando modelos como LLaMA 3 con WebLLM. No requiere servidor, funciona offline tras la carga inicial, y permite chatear con un modelo de lenguaje directamente desde tu máquina, de forma privada y personalizada. Usando tecnologías como **Web Workers**, **WebGPU** y [`@mlc-ai/web-llm`], ofrece una experiencia ideal para entornos educativos, demostraciones técnicas o exploración local de modelos LLM.
