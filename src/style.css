@@ -6,13 +6,13 @@
   --panel: #1e1e1e;
   --border: #2c2c2c;
   --input: #2b2b2b;
-  --text: #e0e0e0;
-  --accent-sidebar: #282727;
-  --accent-sidebar-hover: #3a383853;
+  --text: #eeebf0;
+  --accent-sidebar: #3a383853;
+  --accent-sidebar-hover: #282727;
   --accent: #2a7e28;
   --accent-hover: #257a3c;
-  --user-msg: #813B91;
-  --bot-msg: #4b913b;
+  --user-msg: #5e2c69;
+  --bot-msg: #346828;
   --disabled: #555;
   --font-main: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
@@ -63,7 +63,7 @@ body {
 }
 
 /* =====================
-   Barra lateral (sidebar)
+   Barra lateral
    ===================== */
 #sidebar {
   width: 200px;
@@ -73,7 +73,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 100%; /* asegurar que tome toda la altura disponible */
+  height: 100%;
 }
 
 /* =====================
@@ -92,7 +92,7 @@ h1 strong {
   color: #3fce3c;
   font-weight: 900;
   font-style: normal;
-  text-shadow: 0 2px 6px rgba(58, 216, 84, 0.6);
+  text-shadow: 0 2px 6px rgba(47, 176, 69, 0.6);
 }
 
 /* =====================
@@ -178,9 +178,6 @@ main {
 .message span {
   font-weight: 700;
   font-size: 14px;
-  margin-bottom: 8px;
-  padding-bottom: 2px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   user-select: none;
 }
 
@@ -200,7 +197,6 @@ main {
    Contenedor para botón copiar y estilos 
    ===================== */
 .contenedor-copiar {
-  margin-top: 4px;
   display: flex;
   justify-content: flex-start;
 }
@@ -216,7 +212,7 @@ main {
 }
 
 .copiar-mensaje svg {
-  fill: #ffffff;
+  fill: #828282;
   transition: fill 0.2s ease;
 }
 

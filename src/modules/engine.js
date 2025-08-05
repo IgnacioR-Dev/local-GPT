@@ -10,7 +10,7 @@ export async function crearMotor() {
     MODELO_SELECCIONADO,
     {
       initProgressCallback: (info) => {
-        $estado.textContent = 'Cargando modelo ' + Math.floor(info.progress * 100) + '%';
+        $estado.textContent = 'Cargando modelo...';
         if (info.progress === 1) {
           $botonEnviar.removeAttribute('disabled');
           $estado.textContent = 'Modelo cargado';
