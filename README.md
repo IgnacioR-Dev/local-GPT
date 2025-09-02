@@ -104,7 +104,6 @@ El archivo `worker.js` corre un **Web Worker** que:
 - Mantiene fluidez en la interfaz mediante `postMessage`.
 
 ---
-
 ## ⚠️ Advertencias
 
 - El rendimiento depende de tu hardware (CPU, GPU, WebGPU disponible).
@@ -112,13 +111,6 @@ El archivo `worker.js` corre un **Web Worker** que:
 - Este proyecto está orientado netamente a exploración y aprendizaje, no a producción.
 
 ---
-
-## 📜 Licencia
-
-Distribuido bajo la [licencia MIT](https://opensource.org/licenses/MIT). Apto para uso personal, educativo o colaborativo.
-
----
-
 ## 🤝 Contribuciones
 
 ¡Siempre bienvenidas! Puedes colaborar con:
